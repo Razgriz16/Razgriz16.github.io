@@ -5,4 +5,4 @@
 Esta es una página web básica creada con HTML.
 
 - [postulacion](reporte_postulacion.csv)
-- [react](https://github.com/Razgriz16/Razgriz16.github.io/edit/gh-pages/react)
+- [react](react/README.md)
