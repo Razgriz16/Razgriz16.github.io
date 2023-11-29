@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Repositorio proyecto ingeniería de software Plataforma Gestión Ayudantias Universidad (PGAU)</title>
+  [reporte_postulacion.csv](reporte_postulacion.csv)
 </head>
 <body>
 
