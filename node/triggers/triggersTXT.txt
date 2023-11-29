@@ -1,0 +1,55 @@
+CREATE TRIGGER trigger_estudiantes_mayus_iniciales
+BEFORE INSERT ON estudiante
+FOR EACH ROW
+BEGIN
+
+SET NEW.nombres_estudiante = initcap(NEW.nombres_estudiante);
+
+END;
+/////////////////////////////////////////////////////////
+
+CREATE TRIGGER trigger_carrera_mayus_iniciales
+BEFORE INSERT ON carrera
+FOR EACH ROW
+BEGIN
+
+SET NEW.nombres_carrera = initcap(NEW.nombres_carrera);
+
+END;
+
+///////////////////////////////////////////
+
+CREATE TRIGGER trigger_evaluador_mayus_iniciales
+BEFORE INSERT ON evaluador
+FOR EACH ROW
+BEGIN
+
+SET NEW.nombre_evaluador = initcap(NEW.nombre_evaluador);
+SET NEW.apellido1_evaluador = initcap(NEW.nombre_apellido1);
+SET NEW.apellido2_evaluador = initcap(NEW.nombre_apellido2);
+
+END;
+
+////////////////////////////////////////////
+
+CREATE TRIGGER trigger_facultad_mayus_iniciales
+BEFORE INSERT ON facultad
+FOR EACH ROW
+BEGIN
+
+SET NEW.nombre_facultad = initcap(NEW.nombre_facultad);
+
+END;
+
+////////////////////////////////////////////
+
+CREATE TRIGGER trigger_ramo_mayus_iniciales
+BEFORE INSERT ON ramo
+FOR EACH ROW
+BEGIN
+
+SET NEW.nombre_ramo = initcap(NEW.nombre_ramo);
+
+END;
+
+

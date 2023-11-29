@@ -1,0 +1,10 @@
+,id_postulacion,rut_estudiante,nombre_ramo,semestre_periodo,estado_postulacion,horas_solicitud_ayudantia
+0,1,152365894,algebra,2,aprobado,6
+1,2,123111,algebra,2,rechazado,6
+2,20,152365894,algebra,2,aprobado,4
+3,54,211706875,algebra,2,aprobado,4
+4,233,201706319,algebra,2,pendiente,4
+5,500,1231112222,algebra,2,,4
+6,600,201706319,fisica,1,,4
+7,1231111624,123111,Biology 101,1,pendiente,7
+8,1231116330,123111,Introduction to Programming,1,pendiente,3

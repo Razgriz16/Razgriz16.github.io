@@ -1,0 +1,66 @@
+const trigger_ai_postulacion = `
+  CREATE TRIGGER trigger_ai_postulacion
+  BEFORE INSERT ON postulacion
+  FOR EACH ROW
+  BEGIN
+    SET NEW.id_postulacion = COALESCE((SELECT MAX(id_postulacion) FROM postulacion), 0) + 1;
+  END;
+`;
+//////////////////////////////////////////////
+
+const trigger_ai_periodo = `
+  CREATE TRIGGER trigger_ai_periodo
+  BEFORE INSERT ON periodo
+  FOR EACH ROW
+  BEGIN
+    SET NEW.id_periodo = COALESCE((SELECT MAX(id_periodo) FROM periodo), 0) + 1;
+  END;
+`;
+
+////////////////////////////////////////////////
+
+const trigger_ai_resultados = `
+  CREATE TRIGGER trigger_ai_resultados
+  BEFORE INSERT ON resultados
+  FOR EACH ROW
+  BEGIN
+    SET NEW.id_resultados = COALESCE((SELECT MAX(id_resultados) FROM resultados), 0) + 1;
+  END;
+`;
+
+////////////////////////////////////////////////////
+
+const trigger_ai_carrera = `
+  CREATE TRIGGER trigger_ai_carrera
+  BEFORE INSERT ON carrera
+  FOR EACH ROW
+  BEGIN
+    SET NEW.id_carrera = COALESCE((SELECT MAX(id_carrera) FROM carrera), 0) + 1;
+  END;
+`;
+
+////////////////////////////////////////////////////
+
+const trigger_ai_facultad = `
+  CREATE TRIGGER trigger_ai_facultad
+  BEFORE INSERT ON facultad
+  FOR EACH ROW
+  BEGIN
+    SET NEW.id_facultad = COALESCE((SELECT MAX(id_facultad) FROM facultad), 0) + 1;
+  END;
+`;
+
+///////////////////////////////////////////////////
+
+const trigger_ai_id_detalle_estudiante_ramo = `
+  CREATE TRIGGER trigger_ai_detalle_estudiante_ramo
+  BEFORE INSERT ON detalle_estudiante_ramo
+  FOR EACH ROW
+  BEGIN
+    SET NEW.id_detalle_estudiante_ramo = COALESCE((SELECT MAX(id_detalle_estudiante_ramo) FROM detalle_estudiante_ramo), 0) + 1;
+  END;
+`;
+
+
+
+

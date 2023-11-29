@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Llamar a función Python desde JavaScript</title>
+</head>
+<body>
+    <button onclick="llamarFuncionPython()">Llamar a función Python</button>
+
+    <script>
+        function llamarFuncionPython() {
+            fetch('/generar_reporte') // Ruta definida en el servidor Python
+                .then(response => response.text())
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
